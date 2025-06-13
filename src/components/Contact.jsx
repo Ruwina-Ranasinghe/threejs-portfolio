@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
+
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -32,37 +34,48 @@ const Contact = () => {
     setLoading(true);
 
     emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "JavaScript Mastery",
-          from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+  .send(
+    import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+    import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+    {
+      from_name: form.name,
+      to_name: "Ruwina Ranasinghe",
+      from_email: form.email,
+      to_email: "ruvinaranasingha94@gmail.com",
+      message: form.message,
+    },
+    import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+  )
+  .then(
+    () => {
+      setLoading(false);
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
+      Swal.fire({
+        icon: "success",
+        title: "Message Sent!",
+        text: "Thank you. I will get back to you as soon as possible.",
+        confirmButtonColor: "#3085d6",
+      });
 
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
-  };
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      });
+    },
+    (error) => {
+      setLoading(false);
+      console.error(error);
+
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong. Please try again.",
+        confirmButtonColor: "#d33",
+      });
+    }
+  );
+};
 
   return (
     <div
@@ -127,7 +140,7 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
-        <EarthCanvas />
+        {/* <EarthCanvas /> */}
       </motion.div>
     </div>
   );
