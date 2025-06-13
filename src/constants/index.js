@@ -22,6 +22,7 @@ import {
   shopify,
   travelzip,
   travello,
+  my3Dportfolio,
   tripguide,
   threejs,
   bit,
@@ -258,32 +259,31 @@ const projects = [
     color: "from-orange-400 to-orange-600", // JWT usually uses orange
   },
 ],
-
-
     image: travello,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Ruwina-Ranasinghe/travello-frontend",
   },
-  // {
-  //   name: "Trip Guide",
-  //   description:
-  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "supabase",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: tripguide,
-  //   source_code_link: "https://github.com/",
-  // },
+  {
+  name: "3D Interactive Portfolio",
+  description:
+    "A visually rich and interactive portfolio website showcasing creative 3D animations powered by Three.js. The interface is fully responsive and beautifully styled using Tailwind CSS, while jQuery enhances user engagement through smooth interactions.",
+  tags: [
+    {
+      name: "three.js",
+      color: "from-purple-400 to-purple-600", // 3D vibe
+    },
+    {
+      name: "tailwindcss",
+      color: "from-cyan-400 to-cyan-600", // Tailwind cyan
+    },
+    {
+      name: "jquery",
+      color: "from-pink-400 to-pink-600", // Classic jQuery pink
+    },
+  ],
+  image: my3Dportfolio, // Make sure you import or define this image
+  source_code_link: "https://github.com/Ruwina-Ranasinghe/Ruwina-Ranasinghe-",
+},
+
 ];
 
 export { services, technologies, experiences, testimonials, projects };

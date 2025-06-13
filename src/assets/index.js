@@ -35,6 +35,7 @@ import shining from "./company/shining.png";
 import rjt from "./company/rjt.png";
 
 import travelzip from "./travelzip.png";
+import my3Dportfolio from "./my3Dportfolio.png";
 import travello from "./travello.jpeg"
 import tripguide from "./tripguide.png";
 
@@ -65,6 +66,7 @@ export {
   starbucks,
   tesla,
   travelzip,
+  my3Dportfolio,
 
   travello,
   tripguide,
