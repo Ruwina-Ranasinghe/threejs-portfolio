@@ -23,6 +23,7 @@ import {
   travelzip,
   travello,
   my3Dportfolio,
+  vul1,
   tripguide,
   threejs,
   bit,
@@ -282,6 +283,35 @@ const projects = [
   ],
   image: my3Dportfolio, // Make sure you import or define this image
   source_code_link: "https://github.com/Ruwina-Ranasinghe/Ruwina-Ranasinghe-",
+},
+ {
+  name: "Website Vulnerability Scanner",
+  description:
+    "Developed a web-based vulnerability scanner using React.js and Flask that uses Nmap to detect open ports and security risks. Features include PDF/TXT export, OWASP-based vulnerability summary, safety score pie chart, and dark/light mode. Focused on network security awareness and ethical scanning.",
+  tags: [
+   {
+    name: "React",
+    color: "from-blue-400 to-blue-600", // React blue
+  },
+  {
+    name: "Tailwind CSS",
+    color: "from-cyan-400 to-cyan-600", // Tailwind cyan
+  },
+  {
+    name: "Flask",
+    color: "from-orange-400 to-orange-600", // Flask orange tone
+  },
+  {
+    name: "Python",
+    color: "from-yellow-400 to-yellow-600", // Python yellow
+  },
+  {
+    name: "Nmap",
+    color: "from-green-400 to-green-600", // Nmap scan green
+  },
+  ],
+  image: vul1, // Make sure you import or define this image
+  source_code_link: "https://github.com/Ruwina-Ranasinghe/vuln-scanner",
 },
 
 ];

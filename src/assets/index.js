@@ -36,6 +36,7 @@ import rjt from "./company/rjt.png";
 
 import travelzip from "./travelzip.png";
 import my3Dportfolio from "./my3Dportfolio.png";
+import vul1 from "./vul1.png";
 import travello from "./travello.jpeg"
 import tripguide from "./tripguide.png";
 
@@ -67,6 +68,7 @@ export {
   tesla,
   travelzip,
   my3Dportfolio,
+  vul1,
 
   travello,
   tripguide,
